@@ -1,0 +1,7 @@
+Reflection
+
+I chose a stack for this problem because brackets need to be checked in a last-in, first-out order. When I see an opening bracket, I put it on the stack. When I see a closing bracket, I compare it with the most recent opening bracket. This makes the stack a good fit for checking whether the symbols are balanced.
+
+The 30-minute time limit affected my decision because I wanted to choose a structure that I already understood and could use quickly. I did not want to spend most of the time trying to build a more complicated solution. Using a regular Python list as a stack made the code simple and allowed me to focus on getting a working answer.
+
+One trade-off I made was keeping the solution simple instead of trying to make it more advanced. I also added a few test cases for empty strings, incorrect input types, matching brackets, and mismatched brackets. The solution takes O(n) time because it goes through the string once, and the stack can use O(n) extra space in the worst case. Under time pressure, I learned that getting a correct and understandable solution first is more important than trying to make the code unnecessarily complicated.
